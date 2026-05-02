@@ -15,6 +15,10 @@
         <!--Form login di bagian kanan window login-->
         <div class = "box-form">
             <div class = "form-content">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
                 <form>
                     <h1>Welcome</h1>
                     <p>Login dengan Email</p>
@@ -38,5 +42,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
