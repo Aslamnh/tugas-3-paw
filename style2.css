@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+nav {
+  background: #1a1a1a;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-brand {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-search {
+  flex: 1;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.nav-search input {
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 16px;
+  border: none;
+  background: #333;
+  color: #ccc;
+  font-size: 13px;
+  outline: none;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.btn-login {
+  padding: 7px 18px;
+  background: #c8a96e;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hero {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.btn-hero {
+  padding: 8px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab-bar {
+  background: #fff;
+  display: flex;
+  gap: 4px;
+  padding: 0 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-bar a {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tab-bar a.active {
+  color: #222;
+  border-color: #222;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 28px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.book-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.book-cover {
+  width: 80px;
+  height: 110px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.book-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.book-author {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.book-badge {
+  display: inline-block;
+  font-size: 11px;
+  background: #f0e4c8;
+  color: #7a5c25;
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+}
+
+.book-price {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rating-label {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.star-input {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.star-input .star {
+  font-size: 22px;
+  cursor: pointer;
+  color: #ccc;
+  user-select: none;
+}
+
+.star-input .star.hovered,
+.star-input .star.selected {
+  color: #e8a020;
+}
+
+.btn-submit-rating {
+  padding: 6px 16px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.rating-success {
+  display: none;
+  font-size: 12px;
+  color: #4a8c4a;
+  margin-top: 5px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.overall-card,
+.recent-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.overall-card h3,
+.recent-card h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.overall-book {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.overall-book:last-child {
+  border-bottom: none;
+}
+
+.overall-book-img {
+  width: 34px;
+  height: 46px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.overall-book-title {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overall-stars {
+  display: flex;
+  gap: 2px;
+  margin: 2px 0;
+}
+
+.overall-stars span {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.overall-stars span.filled {
+  color: #e8a020;
+}
+
+.overall-score {
+  font-size: 11px;
+  color: #888;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-icon {
+  width: 32px;
+  height: 44px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.recent-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.recent-author {
+  font-size: 11px;
+  color: #888;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: none;
+  z-index: 9999;
+}
